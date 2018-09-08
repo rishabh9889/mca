@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Normal.master.cs" Inherits="Normal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+    <link href="main.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 266px;
+        }
+        .auto-style2 {
+            width: 638px;
+        }
+        .auto-style4 {
+            text-align: center;
+        }
+        .auto-style5 {
+            font-size: x-large;
+        }
+        .auto-style10{
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <table class="title">
+            <tr>
+                <td class="auto-style1" style="text-align: left" >
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Title Logo.png" Height="100px" />
+                </td>
+                <td class="auto-style2">
+
+                </td>
+                <td style="text-align: right; vertical-align:top;">
+                    
+                    <br /><br /><br /><br /><br />
+                    <a href="http://www.facebook.com"><asp:Image ID="Image2" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/facebook.png" ToolTip="Facebook" BorderStyle="Groove" /></a>
+                &nbsp;
+                <a href="http://www.twitter.com"><asp:Image ID="Image3" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/twitter.png" ToolTip="Twitter" BorderStyle="Groove" /></a>
+                &nbsp;
+                <a href="http://www.google.com"><asp:Image ID="Image4" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/google.png" ToolTip="Google+" BorderStyle="Groove" /></a>
+                &nbsp;
+                <a href="http://www.linkedin.com"><asp:Image ID="Image5" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/linkedin.png" ToolTip="Linkedin" BorderStyle="Groove" /></a>
+                &nbsp;
+                <a href="http://www.youtube.com"><asp:Image ID="Image6" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/youtube.png" ToolTip="Youtube" BorderStyle="Groove" /></a>
+                &nbsp;
+                <a href="http://www.rssfeed.com"><asp:Image ID="Image7" runat="server" Height="30px" Width="30px" ImageUrl="~/Images/Icons/rss.png" ToolTip="RSS Feed" BorderStyle="Groove" /></a>
+                </td>
+            </tr>
+            </table>
+        <table>
+            <tr>
+                <td>
+
+                    <div class="container" id="main" role="main">
+                        <ul class="menu">
+                            <li><a href="../../Home.aspx">Home</a></li>
+                            <li><a href="#s1">Music</a>
+                                <ul class="submenu">
+                                    <li><a href="../../Songs/Latest Song.aspx">Latest Songs</a></li>
+                                    <li><a href="../../Songs/Artist.aspx">Indian Artist</a></li>
+                                    <li><a href="../../Songs/Albums.aspx">Albums</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="../../Video/Video.aspx">Videos</a></li>
+                            <li><a href="#">Movies</a>
+                                <ul class="submenu">
+                                    <li><a href="../../Movies/Bollywood.aspx">Bollywood</a></li>
+                                    <li><a href="../../Movies/Hollywood.aspx">Hollywood</a></li>
+                                    <li><a href="../../Movies/Cartoon.aspx">Cartoon</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../../Lyrics.aspx">Lyrics</a></li>
+                            <li><a href="../../Contact Us.aspx">Contact Us</a></li>
+                            <li><a href="../../About us.aspx">About Us</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+        <table border="1">
+            <tr>
+                <td class="auto-style1" style="vertical-align:top">
+                    <div class="category">
+                        <div class="auto-style4">
+                            <strong><span class="auto-style5"><em>Menu</em></span></strong><br />
+                        </div>
+                        <ul>
+                            <li><a href="../../Songs/Latest Song.aspx">Latest Song</a><br />
+                            </li>
+                            <li><a href="../../Lyrics.aspx">Lyrics</a><br />
+                            </li>
+                            <li><a href="../../Video/Video.aspx">Videos</a><br />
+                            </li>
+                            <li><a href="../../Movies/Movies.aspx">Movies</a><br />
+                            </li>
+                            <li><a href="../../Login.aspx">Login</a><br />
+                            </li>
+                            <li><a href="../../Register.aspx">Register</a><br />
+                            </li>
+                            <li><a href="../../Uploads.aspx">Uploads</a><br />
+                            </li>
+                            <li><a href="../../Feedback.aspx">Feedback</a><br />
+                            </li>
+                        </ul>
+                        <br />
+                    </div>
+                </td>
+                <td>
+                    <div class="content">
+                        <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="clear"></div>
+        <div class="footer">
+            <p class="auto-style10"><strong>© Copyright Reserved 2016-2017  Designed By:Rishabh, Vikas & Prashant </strong></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
